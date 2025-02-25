@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-montserrat:font-family: "Montserrat", serif;
+    --fuente-krona:  font-family: "Krona One", serif;
+}
+
 body{
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     box-sizing: border-box;
 }
 
 header{
     padding: 2% 0% 0% 15%;
+}
+
+.menuLink:hover{
+    colo:var(--color-hover);
 }
 
 .menu{
@@ -17,9 +31,9 @@ header{
 
 .menuLink{
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-montserrat);
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--color-terciario);
     text-decoration: none;
 
 }
@@ -41,20 +55,20 @@ header{
 
 .pContenidoTitulo{
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fuente-krona);
 
 }
 
 .tituloDestaque{
 
-    color: #22D4FD;
+    color: var(--color-terciario);
 
 }
 
 
 .pContenidoTexto{
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .pEnlaces{
@@ -72,11 +86,11 @@ header{
     padding: 21.5px 0;
     border-radius: 8px;
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-montserrat);
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -84,20 +98,24 @@ header{
 }
 
 .pEnlacesRSS:hover{
-    background-color: #272727;
+    background-color:var(--color-hover);
 }
 
 
 .pEnlacesSubtitulo{
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-size:24px;
 }
 
 .footer{
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     padding: 24px;
-    color: #000000;
+    color:var(--color-primario);
     text-align: center;
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-montserrat);
+}
+
+#textoSobreMi{
+    text-align: justify;
 }
