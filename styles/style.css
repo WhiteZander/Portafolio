@@ -42,11 +42,12 @@ header{
     display: flex;
     align-items: center;
     padding: 3% 10%;
-    justify-content: space-between;
+    justify-content: space-between; 
+    gap: 82px;
 }
 
 .p_contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -56,6 +57,7 @@ header{
 .pContenidoTitulo{
     font-size: 2.25rem;
     font-family: var(--fuente-krona);
+    font-weight: 600;
 
 }
 
@@ -81,7 +83,7 @@ header{
 }
 
 .pEnlacesRSS{
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
@@ -107,6 +109,10 @@ header{
     font-size:1.5rem;
 }
 
+.pImagen{
+    width: 50%;
+}
+
 .footer{
     background-color: var(--color-terciario);
     padding: 24px;
@@ -118,4 +124,28 @@ header{
 
 #textoSobreMi{
     text-align: justify;
+}
+
+
+@media(max-width: 1200px){
+
+    header{
+        padding: 10%;
+    }
+
+    .menu{
+
+        justify-content: center; 
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }  
+    
+    .p_contenido{
+        width: auto;
+        padding: auto;
+    }
+
 }
